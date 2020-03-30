@@ -6,10 +6,9 @@ class Driver(object):
     driver = None
 
     @before_suite
-    
     def init(self):
-        self.username = "YOUR_CBT_USERNAME" #replace with your CBT username
-        self.authkey  = "YOUR_CBT_AUTHKEY" #replace with your CBT authkey
+        self.username = "YOUR_CBT_USERNAME" # replace with your CBT username
+        self.authkey  = "YOUR_CBT_AUTHKEY" # replace with your CBT authkey
 
         self.api_session = requests.Session()
         self.api_session.auth = (self.username,self.authkey)
@@ -18,6 +17,7 @@ class Driver(object):
 
         caps = {}
         
+        # replace with your desired test capabilities
         caps['name'] = 'Gauge Test'
         caps['build'] = '1.0'
         caps['browserName'] = 'Chrome'

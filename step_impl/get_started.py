@@ -1,10 +1,5 @@
 from getgauge.python import step
-import os
 from step_impl.utils.driver import Driver
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-
 
 @step("Go to login form at <url>")
 def go_to_login_form_at(arg1):
