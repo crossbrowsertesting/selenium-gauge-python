@@ -76,7 +76,7 @@ class Driver(object):
 
 ## Add your Test Spec and Step Implementations
 
-We are adding the following step implementations to specs -> example.spec:
+We are adding the following test steps to specs -> example.spec:
 
 ```
 # Getting Started with Gauge
